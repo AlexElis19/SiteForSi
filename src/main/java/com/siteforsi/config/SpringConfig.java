@@ -25,7 +25,7 @@ public class SpringConfig {
     @Bean
     public DataSource getDataSource() {
     DriverManagerDataSource dataSource = new DriverManagerDataSource();
-    dataSource.setUrl("jdbc:mysql://localhost:3306/siteforsi/?useUnicode=true&serverTimezone=UTC&useSll=false");
+    dataSource.setUrl("jdbc:mysql://localhost:3306/siteforsi?useUnicode=true&serverTimezone=UTC&useSll=false");
     dataSource.setUsername("root");
     dataSource.setPassword("admin");
     dataSource.setDriverClassName("com.mysql.jdbc.Driver");

@@ -1,4 +1,4 @@
-package dao;
+package com.siteforsi.dao;
 
 public class UserData {
 }

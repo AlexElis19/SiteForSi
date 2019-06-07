@@ -13,16 +13,6 @@ public class UserController {
     @Autowired
     public UserService userService;
 
-    @GetMapping("/")
-    public String index(){
-        return "index";
-    }
-
-    @GetMapping("/hello")
-    public String hello(){
-        return "hello";
-    }
-
     @GetMapping("/users")
     public String getAllUsers(Model model){
         model.addAttribute("users",userService.findAll());

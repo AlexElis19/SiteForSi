@@ -19,4 +19,5 @@ public class ProductDataImpl implements ProductData {
 
         return jdbcTemplate.query(sql, new ProductMapper());
     }
+
 }

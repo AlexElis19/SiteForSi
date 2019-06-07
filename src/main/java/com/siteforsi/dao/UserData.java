@@ -1,4 +1,8 @@
 package com.siteforsi.dao;
+import com.siteforsi.entity.User;
 
-public class UserData {
+import java.util.List;
+
+public interface UserData {
+    List<User> findAll();
 }

@@ -1,6 +1,6 @@
 package com.siteforsi.controller;
 
-import com.siteforsi.service.UserService;
+import com.siteforsi.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/")
-public class UserController {
+public class ProductController {
     @Autowired
-    public UserService userService;
+    public ProductService productService;
 
     @GetMapping("/")
     public String index(){
@@ -23,10 +23,9 @@ public class UserController {
         return "hello";
     }
 
-    @GetMapping("/users")
-    public String getAllUsers(Model model){
-        model.addAttribute("users",userService.findAll());
-        return "usersList";
+    @GetMapping("/product")
+    public String getAllProduct(Model model){
+        model.addAttribute("product",productService.findAll());
+        return "productList";
     }
-
 }

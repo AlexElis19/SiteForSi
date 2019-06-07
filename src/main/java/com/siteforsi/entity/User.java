@@ -1,4 +1,4 @@
-package entity;
+package com.siteforsi.entity;
 
 public class User {
     private int id;
